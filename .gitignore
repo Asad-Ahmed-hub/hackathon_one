@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+process.env.POSTGRES_HOST
 # next.js
 /.next/
 /out/

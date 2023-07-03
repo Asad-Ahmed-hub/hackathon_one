@@ -19,7 +19,11 @@ const Header = () => {
             <Search />
             <ShoppingBag />
             <User />
-            <Button>OUTLET</Button>
+            <Button>
+                <Link href="/store">
+                OUTLET
+                </Link>
+            </Button>
             </div>
         </div>
     )

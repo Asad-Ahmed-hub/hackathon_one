@@ -1,4 +1,5 @@
 "use client"
+import { Menu } from "@/app/data";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -19,18 +20,13 @@ const NavLinks = () => {
   return (
     <NavigationMenu className="font-medium font-[.875rem] text-xl">
       <NavigationMenuList className="gap-4 cursor-pointer ">
-        <NavigationMenuItem>
-          Home
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          About Us
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          Shop
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          Contact Us
-        </NavigationMenuItem>
+        {Menu.map((item) => (
+        <NavigationMenuItem key={item.id}>
+          <Link href={item.link}>
+          {item.name}
+          </Link>
+        </NavigationMenuItem>))}
+
       </NavigationMenuList>
     </NavigationMenu>
 

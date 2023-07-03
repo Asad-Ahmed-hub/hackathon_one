@@ -24,19 +24,22 @@ const Footer = () => {
 
                 <div>
                     <h1 className='text-white font-bold text-2xl'>SHOP</h1>
-                    <ul className="mt-4">
-                        {Categories.map(item => <li key={item} className='text-left text-[#7D7D7D] hover:text-white cursor-pointer'>{item}</li>)}
+                    <ul className="mt-4 leading-loose">
+                    {Categories.map(item =>
+                            <Link key={item.id} href={item.link}>
+                                <li  className='text-[#7D7D7D] hover:text-white'>{item.name}</li>
+                            </Link>)}
                     </ul>
                 </div>
                 <div>
                     <h1 className='text-white font-bold text-2xl'>HELP</h1>
-                    <ul className="mt-4">
+                    <ul className="mt-4 leading-loose">
                         {Help.map(item => <li key={item} className='text-left text-[#7D7D7D] hover:text-white cursor-pointer'>{item}</li>)}
                     </ul>
                 </div>
                 <div>
                     <h1 className='text-white font-bold text-2xl'>ABOUT</h1>
-                    <ul className="mt-4">
+                    <ul className="mt-4 leading-loose">
                         {About.map(item => <li key={item} className='text-left text-[#7D7D7D] hover:text-white cursor-pointer'>{item}</li>)}
                     </ul>
                 </div>

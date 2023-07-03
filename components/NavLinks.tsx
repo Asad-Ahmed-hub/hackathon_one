@@ -17,8 +17,8 @@ import React from 'react'
 
 const NavLinks = () => {
   return (
-    <NavigationMenu className="font-semibold font-[.875rem]">
-      <NavigationMenuList className="gap-4 cursor-pointer">
+    <NavigationMenu className="font-medium font-[.875rem] text-xl">
+      <NavigationMenuList className="gap-4 cursor-pointer ">
         <NavigationMenuItem>
           Home
         </NavigationMenuItem>

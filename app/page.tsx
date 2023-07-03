@@ -1,6 +1,8 @@
 import FeaturesProducts from '@/components/FeaturesProducts'
 import HoodiesAndJackets from '@/components/HoodiesAndJackets'
 import Jeans from '@/components/Jeans'
+import Newsletter from '@/components/Newsletter'
+import Services from '@/components/Services'
 import TShirts from '@/components/TShirts'
 import Image from 'next/image'
 
@@ -11,6 +13,8 @@ export default function Home() {
       <Jeans />
       <TShirts />
       <FeaturesProducts />
+      <Services />
+      <Newsletter />
     </main>
   )
 }

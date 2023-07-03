@@ -4,7 +4,8 @@ import React from 'react'
 const ProductCard = () => {
     return (
         <div className='group hover:cursor-pointer'>
-            <Image src={"/tshirt-2.jpg"} width={300} height={600} className='h-auto w-full' alt='Hoodies' />
+            <Image src={"/tshirt-2.jpg"} width={300} height={600} className='h-auto w-full group-hover:hidden' alt='Hoodies' />
+            <Image src={"/tshirt-1.jpg"} width={300} height={600} className='hidden h-auto w-full group-hover:block' alt='Hoodies' />
             <div className=''>
             <p className='mt-4 text-sm text-[#484F56]'>STARTING AT $19</p>
             <h1 className='mt-2 text-xl text-black'>Printed sweatshirt with hood</h1>

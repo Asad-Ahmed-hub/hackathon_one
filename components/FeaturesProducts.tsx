@@ -5,7 +5,7 @@ const FeaturesProducts = () => {
     return (
         <section className='w-full mt-20'>                
         <h1 className='text-4xl font-bold text-[#484F56] text-center'>JUST IN</h1>
-        <div className='w-full grid grid-cols-4 gap-8'>
+        <div className='w-full grid grid-cols-4 gap-8 mt-10'>
         <ProductCard />
         <ProductCard />
         <ProductCard />

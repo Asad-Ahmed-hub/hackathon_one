@@ -1,13 +1,13 @@
 "use client"
 import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 import Link from "next/link";
@@ -17,22 +17,22 @@ import React from 'react'
 
 const NavLinks = () => {
   return (
-<NavigationMenu className="font-semibold font-[.875rem]">
-  <NavigationMenuList>
-    <NavigationMenuItem>
-      <NavigationMenuTrigger>Home</NavigationMenuTrigger>
-    </NavigationMenuItem>
-    <NavigationMenuItem>
-      <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
-    </NavigationMenuItem>
-    <NavigationMenuItem>
-      <NavigationMenuTrigger>Shop</NavigationMenuTrigger>
-    </NavigationMenuItem>
-    <NavigationMenuItem>
-      <NavigationMenuTrigger>Contact Us</NavigationMenuTrigger>
-    </NavigationMenuItem>
-  </NavigationMenuList>
-</NavigationMenu>
+    <NavigationMenu className="font-semibold font-[.875rem]">
+      <NavigationMenuList className="gap-4 cursor-pointer">
+        <NavigationMenuItem>
+          Home
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          About Us
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          Shop
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          Contact Us
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
 
   )
 }

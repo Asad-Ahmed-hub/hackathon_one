@@ -13,7 +13,9 @@ const Header = () => {
                 <NavLinks />
             </div>
             <div className='w-1/3 flex-none items-center justify-center'>
+                <Link href={"/"}>
                 <Image src={"/logo.svg"} alt="rey logo" className='w-full h-10 aspect-auto' width={200} height={20} />
+                </Link>
             </div>
             <div className='w-1/3 flex flex-row justify-end space-x-4 items-center'>
             <Search />

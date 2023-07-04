@@ -10,7 +10,7 @@ const Footer = () => {
         <section className='w-full bg-[#121212] py-14 px-10'>
             <div className='w-full grid grid-cols-5 gap-8 justify-start items-start '>
                 <div>
-                    <Image src={"/logo-white.svg"} alt="rey logo" className='grayscale w-full ml-auto left-0 h-10 aspect-auto' width={200} height={20} />
+                    <Image src={"/logo-white.svg"} alt="rey logo" className='grayscale w-full justify-self-start left-0 h-10 aspect-auto' width={200} height={20} />
                     <p className='text-left mt-6 text-[#7D7D7D] '>
                         17 Irving Pl, New York,
                         NY 10003

@@ -1,7 +1,8 @@
 import { SlidersHorizontal } from 'lucide-react'
 import React from 'react'
 
-const StoreFilterBar = () => {
+const StoreFilterBar = ({handleGrid}: {handleGrid: any }) => {
+
     return (
         <div className='w-full px-20 py-10'>
             <div className='w-full flex justify-center items-center gap-8'>
@@ -10,13 +11,16 @@ const StoreFilterBar = () => {
                 </div>
                 <div className='w-1/3   gap-4 justify-end items-center'>
                     <div className='w-full flex justify-end items-center gap-8'>
-                    <div className=''>
+                    <div className='space-x-4'>
                         <span>
-                            VIEW 2 3 4
+                            VIEW 
                         </span>
+                        <span onClick={() => handleGrid(2)} className='cursor-pointer'>2</span>
+                        <span onClick={() => handleGrid(3)} className='cursor-pointer'>3</span>
+                        <span onClick={() => handleGrid(4)} className='cursor-pointer'>4</span>
                     </div>
                     <div className=''>
-                        <select name="" id="">
+                        <select name="" id="" className='bg-white'>
                             <option value="Default Sorting">Default Sorting</option>
                             <option value="Default Sorting">Sort by Rating</option>
                             <option value="Default Sorting">Sort By Latest</option>

@@ -18,7 +18,7 @@ import React from 'react'
 
 const NavLinks = () => {
   return (
-    <NavigationMenu className="font-medium font-[.875rem] text-xl">
+    <NavigationMenu className="font-medium font-[.875rem] text-base">
       <NavigationMenuList className="gap-4 cursor-pointer ">
         {Menu.map((item) => (
         <NavigationMenuItem key={item.id}>

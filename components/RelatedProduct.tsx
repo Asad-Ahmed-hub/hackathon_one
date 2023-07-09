@@ -1,13 +1,9 @@
 import React from 'react'
 import ProductCard from './ProductCard'
 
-const StoreProductsList = ({grid}:{grid:number}) => {
-  
-    const style = `w-full grid grid-cols-${grid} gap-8  px-20 pt-6 pb-20` 
-  
+const RelatedProduct = () => {
   return (
-                
-    <div className={style}>
+    <div className='w-full grid grid-cols-4 gap-8 pt-6 pb-20'>
     <ProductCard />
     <ProductCard />
     <ProductCard />
@@ -22,4 +18,4 @@ const StoreProductsList = ({grid}:{grid:number}) => {
   )
 }
 
-export default StoreProductsList
+export default RelatedProduct
